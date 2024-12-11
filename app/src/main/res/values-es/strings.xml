@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Encuentra el teléfono con aplausos</string>
+
+
+    <string name="account_url">https://play.google.com/store/apps/details?id=com.finder.clap.findphone.whistle.byclapping</string>
+    <string name="more">Cuenta+Nombre</string>
+
+    <string name="flashlight">LINTERNA</string>
+    <string name="messenger_send_button_text">Enviar</string>
+
+    <string name="setting">CONFIGURACIÓN</string>
+    <string name="sound">SONIDO</string>
+
+    <string name="vibrate">VIBRAR</string>
+    <string name="privacy_policy">https://zerogapps.netlify.app/policy</string>
+    <string name="languages">Idiomas</string>
+    <string name="skip">Omitir</string>
+    <string name="next">Siguiente</string>
+    <string name="done">Listo</string>
+    <string name="note_continue1">Find your phone immediately with\njust a clap</string>
+    <string name="note_continue2">Locate your device easily with\nvibration and light signals</string>
+    <string name="note_continue3">Customize with a wide range of\ndiverse sounds</string>
+    <string name="note_continue4">Many sounds for you to\nchoose from</string>
+    <string name="guide_1"> Puede realizar un seguimiento de la presión arterial de forma fácil y exacta en el informe.</string>
+    <string name="guide_2">Vea el cambio de su salud en cada gráfico de barras.</string>
+    <string name="guide_3">Brindarle conocimientos útiles sobre la presión arterial.</string>
+    <string name="txt_this_action_can_contain_ads">Esta acción puede contener anuncios…</string>
+    <string name="start_normarl">Inicio</string>
+    <string name="text_vibrate">Vibrar</string>
+    <string name="txt_vibrate">Configurar el modo de vibración</string>
+    <string name="text_flash">Linterna</string>
+    <string name="txt_flash">Personaliza el flash</string>
+    <string name="text_sound">Sonido</string>
+
+</resources>

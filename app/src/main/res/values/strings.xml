@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Find Phone with Clapping</string>
+
+
+    <string name="account_url">https://play.google.com/store/apps/details?id=com.finder.clap.findphone.whistle.byclapping</string>
+    <string name="more">Account+Name</string>
+
+    <string name="flashlight">FLASHLIGHT</string>
+    <string name="messenger_send_button_text">Send</string>
+
+    <string name="setting">SETTINGS</string>
+    <string name="sound">SOUND</string>
+
+    <string name="vibrate">VIBRATE</string>
+    <string name="privacy_policy">https://zerogapps.netlify.app/policy</string>
+    <string name="languages">Select language</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <string name="note_continue1">Find your phone immediately with\njust a clap</string>
+    <string name="note_continue2">Locate your device easily with\nvibration and light signals</string>
+    <string name="note_continue3">Customize with a wide range of\ndiverse sounds</string>
+    <string name="note_continue4">Many sounds for you to\nchoose from</string>
+    <string name="guide_1">     You can track the Blood Pressure easily and exactly on report.</string>
+    <string name="guide_2">See the change of your health in every bar graph on it.</string>
+    <string name="guide_3">Give you useful knowledge about blood pressure.</string>
+    <string name="txt_this_action_can_contain_ads">This action can contain ads…</string>
+    <string name="start_normarl">Start</string>
+    <string name="text_vibrate">Vibrate</string>
+    <string name="txt_vibrate">Set up vibration mode</string>
+    <string name="text_flash">Flashlight</string>
+    <string name="txt_flash">Customize the flash</string>
+    <string name="text_sound">Sound</string>
+    <string name="goto_settings" translatable="false">You must approve this permission in Permissions in the app settings on your device to continue using the app.</string>
+    <string name="settings" translatable="false">Settings</string>
+    <string name="grant_permission" translatable="false"><![CDATA[>Please grant the application permission to continue using the app]]></string>
+    <string name="permission_accessibility_setting_description" translatable="false">Enable Accessibility Service to perform a global action. For example going back, opening notification center, opening power dialog, ect. Please be assured that Assistive Touch will not collect any personal information. Tap the switch at the top-right corner. After tapping the switch, the system will send a notice warning you about your personal information. System Requirements: Android 4.1 or later version</string>
+
+
+    <string name="title" translatable="false">Choose the alarm type you want</string>
+    <string name="guide" translatable="false">* Click on any of the alarms to edit the settings</string>
+    <string name="battery_full" translatable="false">Full Charge</string>
+    <string name="battery_low" translatable="false">Low Battery</string>
+    <string name="notification_tone" translatable="false">Notification Tone</string>
+    <string name="select_sound" translatable="false">Select sound</string>
+    <string name="repeat_times" translatable="false">Repeat Times</string>
+    <string name="repeat_times_desc" translatable="false">The alarm will repeat every minute for the selected number of times</string>
+    <string name="battery_percentage" translatable="false">Battery Percentage Lower Than</string>
+    <string name="activate" translatable="false">Activate</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="saved" translatable="false">Saved</string>
+    <string name="default_tone" translatable="false">Default Tone</string>
+
+    <string name="repeat_once" translatable="false">1</string>
+    <string name="repeat_two_times" translatable="false">2</string>
+    <string name="repeat_three_times" translatable="false">3</string>
+    <string name="repeat_four_times" translatable="false">4</string>
+    <string name="repeat_infinite" translatable="false">∞</string>
+
+    <string name="version" translatable="false">Version</string>
+    <string name="insufficeiant_permission_confirm_old_voice_pass" translatable="false">INSUFFICIENT PERMISSIONS… \nFirst Grant MIC Permission from settings then confirm your old voice password</string>
+    <string name="insufficeiant_permission_set_voice_pass" translatable="false">INSUFFICIENT PERMISSIONS… \nFirst Grant MIC Permission from settings then set your new voice password</string>
+    <string name="insufficeiant_permission" translatable="false">INSUFFICIENT PERMISSIONS… \nGrant Permission from settings to Speak your password\n or \n Use Alternate PIN to Unlock</string>
+    <string name="insufficeiant_permission_confirm_voice_pass" translatable="false">INSUFFICIENT PERMISSIONS… \nFirst Grant MIC Permission from settings then Confirm your voice password</string>
+    <string name="no_input_speak_your_pass" translatable="false">Time Out, No Input… \nTap on Mic &amp; Speak your password\n or \n Use Alternate PIN to Unlock</string>
+    <string name="no_input_speak_your_pass_confirm_old_voice_pass" translatable="false">Time Out, No Input… \nTap on Mic again &amp; Confirm your old voice password</string>
+    <string name="no_input_speak_your_pass_confirm_voice_pass" translatable="false">Time Out, No Input… \nTap on Mic again &amp; Confirm your voice password</string>
+    <string name="no_input_speak_your_pass_set_voice_pass" translatable="false">Time Out, No Input… \nTap on Mic again &amp; Speak your password</string>
+    <string name="recognizer_busy" translatable="false">Recognizer is Busy! \n Use Alternate PIN to Unlock</string>
+    <string name="recognizer_busy_confirm_old_voice_pass" translatable="false">OOPS! Recognizer is Busy.</string>
+    <string name="recognizer_busy_confirm_voice_pass" translatable="false">OOPS! Recognizer is Busy.</string>
+    <string name="recognizer_busy_set_voice_pass" translatable="false">OOPS! Recognizer is Busy.</string>
+    <string name="network_error" translatable="false">Network Error…\nTap on Mic &amp; Speak your password\n or \n Use Alternate PIN to Unlock</string>
+    <string name="network_error_confirm_old_voice_pass" translatable="false">Network Error…\nFirst Check Network Connection then Tap on Mic &amp; Speak your password again</string>
+    <string name="network_error_confirm_voice_pass" translatable="false">Network Error…\nFirst Check Network Connection then Tap on Mic &amp; Speak your password again</string>
+    <string name="network_error_set_voice_pass" translatable="false">Network Error…\nFirst Check Network Connection then Tap on Mic &amp; Speak your password again</string>
+    <string name="network_timeout" translatable="false">Network TimeOut…\nTap on Mic &amp; Speak your password\n or \n Use Alternate PIN to Unlock</string>
+    <string name="network_timeout_confirm_old_voice_pass" translatable="false">Network TimeOut…\nTap on Mic &amp; confirm your old password again</string>
+    <string name="network_timeout_confirm_voice_pass" translatable="false">Network TimeOut…\nTap on Mic &amp; Speak your password again</string>
+    <string name="network_timeout_set_voice_pass" translatable="false">Network TimeOut…\nTap on Mic &amp; Speak your password again</string>
+    <string name="error_a11y_label" translatable="false">Error: invalid</string>
+    <string name="error_client" translatable="false">Speak Clearly…\nTap on Mic &amp; Speak your password\n or \n Use Alternate PIN to Unlock</string>
+    <string name="error_client_confirm_old_voice_pass" translatable="false">Speak Clearly…\nTap on Mic &amp; Speak your password again</string>
+    <string name="error_client_confirm_voice_pass" translatable="false">Speak Clearly…\nTap on Mic &amp; Confirm your password</string>
+    <string name="error_client_set_voice_pass" translatable="false">Speak Clearly…\nTap on Mic &amp; Speak your password again</string>
+    <string name="error_no_match_confirm_old_voice_pass" translatable="false">Error No Match</string>
+    <string name="error_no_match_confirm_voice_pass" translatable="false">Error No Match</string>
+    <string name="error_no_match_set_voice_pass" translatable="false">Error No Match</string>
+    <string name="error_server" translatable="false">Error Server…\nTap on Mic &amp; Speak your password\n or \n Use Alternate PIN to Unlock</string>
+    <string name="error_server_confirm_old_voice_pass" translatable="false">Error Server…\nTap on Mic &amp; Speak your password again</string>
+    <string name="error_server_confirm_voice_pass" translatable="false">Error Server…\nTap on Mic &amp; Confirm your password</string>
+    <string name="error_server_set_voice_pass" translatable="false">Error Server…\nTap on Mic &amp; Speak your password again</string>
+
+    <string name="storage_permission_allow_str" translatable="false">Please grant permission</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="_2" translatable="false">2</string>
+    <string name="_3" translatable="false">3</string>
+    <string name="_4" translatable="false">4</string>
+    <string name="_5" translatable="false">5</string>
+    <string name="_6" translatable="false">6</string>
+    <string name="_7" translatable="false">7</string>
+    <string name="_8" translatable="false">8</string>
+    <string name="_9" translatable="false">9</string>
+    <string name="activate_voice_lock_screen" translatable="false">Activate Voice Lock Screen</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="androidx_startup" translatable="false">androidx.startup</string>
+    <string name="app_s_setting" translatable="false">App\'s Setting</string>
+    <string name="app_settings" translatable="false">App Settings</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="audio_error" translatable="false">Audio Error…\nTap on Mic &amp; Speak your password\n or \n Use Alternate PIN to Unlock</string>
+    <string name="audio_error_confirm_old_voice_pass" translatable="false">Audio Error…\nTap on Mic &amp; Speak your password again\n</string>
+    <string name="audio_error_confirm_voice_pass" translatable="false">Audio Error…\nTap on Mic &amp; Confirm your password again\n</string>
+    <string name="audio_error_set_voice_pass" translatable="false">Audio Error…\nTap on Mic &amp; Speak your password again\n</string>
+    <string name="back" translatable="false">Back</string>
+    <string name="back_button" translatable="false">back button</string>
+    <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="confirm_new_voice_password" translatable="false">CONFIRM NEW VOICE PASSWORD</string>
+    <string name="confirm_pin" translatable="false">Confirm PIN</string>
+    <string name="continue_by_accepting_our_privacy_policy_amp_tos" translatable="false">Continue by accepting our Privacy Policy &amp; TOS </string>
+    <string name="copy" translatable="false">Copy</string>
+    <string name="copy_toast_msg" translatable="false">Link copied to clipboard</string>
+    <string name="disabled_permisson" translatable="false">It seems like you have Disabled Mic Permission.\nTo record an audio password,\nYou need to allow\n\'RECORD_AUDIO\' permission.\n To enable this permission please follow the below steps… \nOpen Settings &gt; Permissions &gt; Enable Microphone</string>
+    <string name="enter_your_pin" translatable="false">ENTER YOUR PIN</string>
+    <string name="expand_button_title" translatable="false">Advanced</string>
+    <string name="fallback_menu_item_copy_link" translatable="false">Copy link</string>
+    <string name="fallback_menu_item_open_in_browser" translatable="false">Open in browser</string>
+    <string name="fallback_menu_item_share_link" translatable="false">Share link</string>
+    <string name="firebase_database_url" translatable="false">https://voice-lock-abs-studio.firebaseio.com</string>
+    <string name="i_agree" translatable="false">I Agree</string>
+    <string name="install" translatable="false">INSTALL</string>
+    <string name="let_s_complete_initial_setup" translatable="false">Let\'s Complete Initial Setup</string>
+    <string name="listening" translatable="false">\" Listening…\"</string>
+    <string name="mic" translatable="false">Mic</string>
+    <string name="more_apps_ad" translatable="false">More Apps (AD)</string>
+    <string name="native_body" translatable="false">Body</string>
+    <string name="native_headline" translatable="false">Headline</string>
+    <string name="native_media_view" translatable="false">Media View</string>
+    <string name="next">NEXT</string>
+    <string name="not_set" translatable="false">Not set</string>
+    <string name="open_settings" translatable="false">Open Settings</string>
+    <string name="permission_required" translatable="false">Permission Required !</string>
+    <string name="pin_password" translatable="false">PIN Password</string>
+    <string name="preference_copied" translatable="false">\"%1$s\" copied to clipboard.</string>
+    <string name="ready_to_speak" translatable="false">Ready to Speak</string>
+    <string name="s1" translatable="false">Save image</string>
+    <string name="s2" translatable="false">Allow Ad to store image in Picture gallery?</string>
+    <string name="s3" translatable="false">Accept</string>
+    <string name="s4" translatable="false">Decline</string>
+    <string name="s5" translatable="false">Create calendar event</string>
+    <string name="s6" translatable="false">Allow Ad to create a calendar event?</string>
+    <string name="s7" translatable="false">Test Ad</string>
+    <string name="search_menu_title" translatable="false">Search</string>
+    <string name="set_new_pin" translatable="false">SET NEW PIN</string>
+    <string name="set_new_voice_password" translatable="false">SET NEW VOICE PASSWORD</string>
+    <string name="show_pin" translatable="false">SHOW PIN</string>
+    <string name="side_sheet_accessibility_pane_title" translatable="false">Side Sheet</string>
+    <string name="status_bar_notification_info_overflow" translatable="false">999+</string>
+    <string name="speak_voice_password_n_or_n_click_on_keypad_icon_to_unlock_with_pin_code" translatable="false">Speak Voice Password \n \'or\' \n Click on Keypad icon to unlock with PIN CODE</string>
+    <string name="success" translatable="false">Success!</string>
+    <string name="summary_collapsed_preference_list" translatable="false">%1$s, %2$s</string>
+    <string name="tap_on" translatable="false">Tap on Mic to Speak Again…</string>
+    <string name="tap_on_mic" translatable="false">Tap on Mic to Record</string>
+    <string name="this_is_heading" translatable="false">This is Heading</string>
+    <string name="this_is_text_message_this_is_text_message_this_is_text_message_this_is_text_message" translatable="false">This is a text Message</string>
+    <string name="voice_password" translatable="false">Voice Password</string>
+    <string name="watermark_label_prefix" translatable="false">AdMob - </string>
+    <string name="you_have" translatable="false">You have to confirm your old voice password\nbefore setup new voice password</string>
+</resources>

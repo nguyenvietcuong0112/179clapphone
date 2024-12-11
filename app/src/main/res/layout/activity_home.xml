@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_above="@+id/ll_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_height="56dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/arsenal_bold"
+
+                        android:text="Find Phone"
+                        android:textColor="#101828"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/imgSetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_setting" />
+
+                    <ImageView
+                        android:id="@+id/infomation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toStartOf="@+id/imgSetting"
+                        android:src="@drawable/infomation" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/fr_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/shimmer_native_language"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <include layout="@layout/ads_shimmer_native_language" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frClap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/btnClapFindPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp"
+                        android:background="@drawable/ic_find_phone_home" />
+
+                    <FrameLayout
+                        android:id="@+id/bgClap"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_tran_btn_home" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_active_home" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frChangeAlarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frClap"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/btnChangeAlarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp"
+                        android:background="@drawable/bg_charlingalarm" />
+
+                    <FrameLayout
+                        android:id="@+id/bgBattery"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_tran_btn_home" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_active_home" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frVoiPassCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frChangeAlarm"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/btnVoicepassCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_below="@+id/frClap"
+                        android:background="@drawable/bg_voice_passcode"
+
+                        />
+
+                    <FrameLayout
+                        android:id="@+id/bgVoiPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_tran_btn_home" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_active_home" />
+                    </FrameLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <include
+                android:id="@+id/banner"
+                layout="@layout/layout_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

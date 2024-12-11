@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trouver un téléphone en applaudissant</string>
+
+
+    <string name="account_url">https://play.google.com/store/apps/details?id=com.finder.clap.findphone.whistle.byclapping</string>
+    <string name="more">Compte+Nom</string>
+
+    <string name="flashlight">LAMPE DE POCHE</string>
+    <string name="messenger_send_button_text">Envoyer</string>
+
+    <string name="setting">PARAMÈTRES</string>
+    <string name="sound">SON</string>
+
+    <string name="vibrate">VIBRER</string>
+    <string name="privacy_policy">https://zerogapps.netlify.app/policy</string>
+    <string name="languages">Langues</string>
+    <string name="skip">Sauter</string>
+    <string name="next">Suivant</string>
+    <string name="done">Terminé</string>
+    <string name="note_continue1">Find your phone immediately with\njust a clap</string>
+    <string name="note_continue2">Locate your device easily with\nvibration and light signals</string>
+    <string name="note_continue3">Customize with a wide range of\ndiverse sounds</string>
+    <string name="note_continue4">Many sounds for you to\nchoose from</string>
+    <string name="guide_1"> Vous pouvez suivre la tension artérielle facilement et précisément sur le rapport.</string>
+    <string name="guide_2">Voir lévolution de votre santé dans chaque graphique à barres.</string>
+    <string name="guide_3">Vous donner des connaissances utiles sur la tension artérielle.</string>
+    <string name="txt_this_action_can_contain_ads">Cette action peut contenir des annonces…</string>
+    <string name="start_normarl">Démarrer</string>
+    <string name="text_vibrate">Vibrer</string>
+    <string name="txt_vibrate">Configurer le mode vibration</string>
+    <string name="text_flash">Lampe de poche</string>
+    <string name="txt_flash">Personnaliser le flash</string>
+    <string name="text_sound">Son</string>
+
+</resources>

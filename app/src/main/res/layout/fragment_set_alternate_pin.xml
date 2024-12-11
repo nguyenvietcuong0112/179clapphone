@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_enter_your_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/arsenal_bold"
+            android:text="Set new PIN"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/keypad_layout"
+        android:background="@drawable/shape_keypad_background"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_2"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:text="@string/_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_3"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arsenal_bold"
+
+                    android:text="@string/_3" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_4"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:text="@string/_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_5"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_6"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:text="@string/_6" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_7"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arsenal_bold"
+
+                    android:text="@string/_7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_8"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arsenal_bold"
+
+                    android:text="@string/_8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_9"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:text="@string/_9" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_clear_character"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_clear_character"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_0"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arsenal_bold"
+
+                    android:text="@string/_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:tag="ll_clear_all_text"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:textColor="@color/color_success_stroke"
+                    android:layout_gravity="center_horizontal"
+                    android:tag="btn_confirm_pin"
+                    android:background="@drawable/btn_done"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/keypad_layout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+<!--            <TextView-->
+<!--                android:textSize="26sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/set_new_pin" />-->
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_progress="100"
+                app:lottie_rawRes="@raw/lock" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/et_password"
+                    android:background="@drawable/shape_warning"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="2dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_70sdp"
+                    android:minWidth="200dp"
+                    android:cursorVisible="false"
+                    android:maxLength="4"
+                    android:inputType="numberPassword"
+                    android:textAlignment="center"
+                    android:letterSpacing="0.2" />
+                <ImageView
+                    android:id="@+id/my_image_view"
+                    android:tag="show_hide_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginHorizontal="@dimen/_80sdp"
+                    android:background="@drawable/ic_show"
+                    />
+
+            </RelativeLayout>
+
+
+<!--            <TextView-->
+<!--                android:textSize="13sp"-->
+<!--                android:textColor="#4d000000"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:tag="show_hide_pass"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="SHOW PIN" />-->
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

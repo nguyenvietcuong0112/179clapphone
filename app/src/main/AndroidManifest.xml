@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />-->
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31" >
+
+
+        <activity
+            android:name=".ui.getstart.GetStartActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".ui.new_voice.AppSettingsPreferenceActivity" />
+        <activity android:name=".ui.new_voice.SetNewAlternatePinActivity" />
+        <activity android:name=".ui.voice_passcode.VoicePasscodeActivity" />
+        <activity android:name=".ui.new_voice.SetNewVoicePasswordActivity" />
+        <activity android:name=".ui.new_voice.PreviewLockScreen" />
+        <activity android:name=".ui.new_voice.HomeActivityVoice" />
+        <activity android:name=".ui.new_voice.UpdateAlternatePinActivity" />
+        <activity android:name=".ui.new_voice.UpdateVoicePasswordActivity" />
+        <service
+            android:name=".ui.jobService.LockScreenForegroundService"
+            android:label="Lock Screen Service"
+            android:foregroundServiceType="dataSync"
+            android:stopWithTask="false"
+            tools:ignore="ForegroundServicePermission" />
+        <service
+            android:name=".ui.services.VocalService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="microphone"
+            android:stopWithTask="false"
+            tools:ignore="ForegroundServicePermission" />
+        <activity
+            android:name=".ui.settingapp.SettingAppActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.language.LanguageSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.infor.InfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.sound.SoundActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.permision.PermissionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.language.LanguageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.intro.IntroActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name=".ui.alert_vocal.VocalAlert"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tr35bfindphone">
+            <intent-filter>
+                <action android:name="android.intent.action.VOCALALERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.setting.SettingFindPhoneActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.PermissionHome"
+            android:screenOrientation="portrait" />
+
+
+        <service android:name=".service.BatteryService"
+
+            />
+
+        <activity
+            android:name=".ui.battery.BatteryStatusActivity"
+            android:theme="@style/Theme.BatteryAlarm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dialog.ChargeDialog"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+
+        <receiver
+            android:name=".broadcast.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <receiver android:name=".broadcast.BatteryLevelReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="com.finder.clap.findphone.whistle.byclapping.ACTION_STOP_LOW_BATTERY_ALARM" />
+                <action android:name="com.finder.clap.findphone.whistle.byclapping.ACTION_STOP_FULL_BATTERY_ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.AlarmBroadcastReceiver" />
+    </application>
+
+</manifest>

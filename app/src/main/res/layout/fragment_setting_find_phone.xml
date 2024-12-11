@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/fontsemi"
+                android:text="@string/app_name"
+                android:textColor="@color/blach_131415"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/infomation"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_toStartOf="@+id/settingButton"
+                android:background="@color/white"
+                android:onClick="settingButton"
+                android:src="@drawable/infomation" />
+
+            <ImageButton
+                android:id="@+id/settingButton"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@color/white"
+                android:onClick="settingButton"
+                android:src="@drawable/setting" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="25dp"
+
+                    android:layout_marginBottom="25dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/ivBackgroundClap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/image_background_clap_on"
+                                app:layout_constraintHeight_percent="0.22"
+                                tools:ignore="NotSibling" />
+
+                            <ImageView
+                                android:id="@+id/buttonController"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/cats"
+                                app:layout_constraintHeight_percent="0.11" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--                <RelativeLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content">-->
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/buttonController"-->
+                    <!--                        android:layout_width="@dimen/_150sdp"-->
+                    <!--                        android:layout_height="@dimen/_150sdp"-->
+                    <!--                        android:layout_centerInParent="true"-->
+                    <!--                        android:layout_marginTop="5dp"-->
+                    <!--                        android:layout_marginBottom="5dp"-->
+                    <!--                        android:src="@drawable/bird"-->
+                    <!--                        android:visibility="visible" />-->
+
+                    <!--                </RelativeLayout>-->
+                    <FrameLayout
+                        android:id="@+id/fr_ads"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/bg_ads_native"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <include layout="@layout/custom_ads_native_shimer_small" />
+                    </FrameLayout>
+                    <!--                <RelativeLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:background="@drawable/bgflash">-->
+                    <!--&lt;!&ndash;                    <androidx.appcompat.widget.SwitchCompat&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:id="@+id/flashbox"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_alignParentEnd="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_centerVertical="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_marginRight="30dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:checked="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:theme="@style/SCBSwitch" />&ndash;&gt;-->
+                    <!--                </RelativeLayout>-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/bg_btn_home_real_time_tracker"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_icon_tracking_user_list"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:src="@drawable/ic_vibrate" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:layout_toEndOf="@+id/iv_icon_tracking_user_list"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_tracking_user_list_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fontmedium"
+                                android:text="@string/text_vibrate"
+                                android:textColor="#1F1F1F"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <TextView
+                                android:id="@+id/txt_tracking_user_list_des"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:fontFamily="@font/fontsemi"
+                                android:text="@string/txt_vibrate"
+                                android:textColor="#595959"
+                                android:textSize="@dimen/_9sdp" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/vibratebox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_80sdp"
+                            android:layout_marginRight="10dp"
+                            android:checked="true"
+                            android:theme="@style/SCBSwitch" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/bg_btn_home_real_time_tracker"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgFlashLight"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:src="@drawable/ic_sound"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:layout_toEndOf="@+id/imgFlashLight"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fontmedium"
+                                android:text="@string/text_flash"
+                                android:textColor="#1F1F1F"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:fontFamily="@font/fontsemi"
+                                android:text="@string/txt_flash"
+                                android:textColor="#595959"
+                                android:textSize="@dimen/_9sdp" />
+
+                        </LinearLayout>
+
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/flashbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_80sdp"
+                            android:layout_marginRight="10dp"
+                            android:checked="true"
+                            android:theme="@style/SCBSwitch" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/soundButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:background="@drawable/bg_sound_home"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgSound"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:src="@drawable/ic_flash" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="@dimen/_10sdp"
+                                android:layout_toEndOf="@+id/imgSound"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/fontmedium"
+                                    android:text="@string/text_sound"
+                                    android:textColor="#1F1F1F"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:fontFamily="@font/fontsemi"
+                                    android:text="Select the desired avatar and sound"
+                                    android:textColor="#595959"
+                                    android:textSize="@dimen/_9sdp" />
+
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/nextID"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                               >
+
+                                <ImageButton
+                                    android:id="@+id/next"
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/icon_next"
+                                    android:checked="true"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="MissingConstraints" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <!--                    <LinearLayout-->
+                            <!--                        android:layout_width="wrap_content"-->
+                            <!--                        android:layout_height="wrap_content"-->
+                            <!--                        android:layout_alignParentEnd="true"-->
+                            <!--                        android:layout_centerVertical="true"-->
+                            <!--                        android:layout_marginLeft="@dimen/_128sdp"-->
+                            <!--                        >-->
+                            <!--                        <androidx.appcompat.widget.SwitchCompat-->
+                            <!--                            android:id="@+id/soundbox"-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:checked="true"-->
+                            <!--                            android:theme="@style/SCBSwitch" />-->
+                            <!--                    </LinearLayout>-->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_below="@+id/a">
+
+                            <SeekBar
+                                android:id="@+id/seekbar"
+                                style="@style/MySeekBar"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginBottom="@dimen/_10sdp" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!--                <RelativeLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content">-->
+
+                    <!--                    <ImageView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:adjustViewBounds="true"-->
+                    <!--                        android:src="@drawable/bgsound" />-->
+
+                    <!--                    <RelativeLayout-->
+                    <!--                        android:id="@+id/a"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="50dp"-->
+                    <!--                        android:layout_marginTop="@dimen/_10sdp">-->
+                    <!--                        <androidx.appcompat.widget.SwitchCompat-->
+                    <!--                            android:id="@+id/soundbox"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_alignParentEnd="true"-->
+                    <!--                            android:layout_centerVertical="true"-->
+                    <!--                            android:layout_marginRight="30dp"-->
+                    <!--                            android:checked="true"-->
+                    <!--                            android:theme="@style/SCBSwitch" />-->
+
+                    <!--                    </RelativeLayout>-->
+
+
+                    <!--                </RelativeLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/linear1txtStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/BiLinear1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font"
+                            android:text="Detection Started"
+                            android:textColor="@color/toolbarclr"
+                            android:textSize="23dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear1BTNstartservice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/textSize"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/progressBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/black"
+                    android:visibility="invisible">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:indeterminate="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/textSize">
+
+                    <!--        <ImageView-->
+                    <!--            android:id="@+id/startservice"-->
+                    <!--            android:layout_width="@dimen/text"-->
+                    <!--            android:layout_height="@dimen/textSize"-->
+                    <!--            android:layout_weight="1.0"-->
+                    <!--            android:src="@drawable/check" />-->
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!--    <LinearLayout-->
+        <!--        android:id="@+id/ll_banner"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_alignParentBottom="true"-->
+        <!--        android:orientation="horizontal">-->
+
+        <!--        <include-->
+        <!--            android:id="@+id/banner"-->
+        <!--            layout="@layout/layout_banner"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content" />-->
+        <!--    </LinearLayout>-->
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/home_activity_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/banner1">
+
+        <RelativeLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/arsenal_bold"
+                android:text="Voice"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/ll_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_setting" />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/activate_deactivate_lockscrn"
+            android:layout_below="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_home"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:baselineAligned="false"
+            android:minHeight="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="8">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:gravity="center_vertical"
+                    android:paddingTop="4dp"
+                    android:text="@string/activate_voice_lock_screen"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/voice_lock_service"
+                    android:layout_width="50sp"
+                    android:layout_height="30dp"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/all_icons"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/activate_deactivate_lockscrn"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_first_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_voice_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_70sdp"
+                    android:background="@drawable/bgvoice"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                   >
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:contentDescription="@string/mic"-->
+<!--                        android:src="@drawable/icon_mic" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="15dp"-->
+<!--                        android:text="@string/voice_password"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="13sp" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_keypad_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_70sdp"
+                    android:background="@drawable/bg_pin"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:contentDescription="@string/mic"-->
+<!--                        android:src="@drawable/icon_keypad_lock" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="15dp"-->
+<!--                        android:text="@string/pin_password"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="13sp" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/ll_first_row"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:weightSum="1">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_settings"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/shape_warning"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"-->
+<!--                    android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:paddingTop="30dp"-->
+<!--                    android:paddingRight="20dp"-->
+<!--                    android:paddingBottom="20dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:contentDescription="@string/app_settings"-->
+<!--                        android:src="@drawable/icon_settings" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="15dp"-->
+<!--                        android:text="@string/app_s_setting"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="13sp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+
+        </RelativeLayout>
+
+        <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--        android:id="@+id/cl_bottom"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginLeft="@dimen/_10sdp"-->
+        <!--        android:layout_marginTop="@dimen/_15sdp"-->
+        <!--        android:layout_marginRight="@dimen/_10sdp"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        android:layout_alignParentBottom="true">-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/ll_rate"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="vertical"-->
+        <!--            app:layout_constraintDimensionRatio="1:1"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/ll_share"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintWidth_percent="0.2">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="0dp"-->
+        <!--                android:layout_marginBottom="@dimen/_2sdp"-->
+        <!--                android:src="@drawable/ic_rate"-->
+        <!--                app:layout_constraintBottom_toTopOf="@+id/txt_rate"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/txt_rate"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/rate"-->
+        <!--                android:textColor="@color/statusBarColor"-->
+        <!--                android:textSize="@dimen/_12ssp"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent" />-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:id="@+id/ll_share"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            app:layout_constraintDimensionRatio="1:1"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/ll_policy"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/ll_rate"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintWidth_percent="0.2">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="0dp"-->
+        <!--                android:layout_marginBottom="@dimen/_2sdp"-->
+        <!--                android:src="@drawable/ic_share"-->
+        <!--                app:layout_constraintBottom_toTopOf="@+id/txt_share"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:textSize="@dimen/_12ssp"-->
+        <!--                android:textColor="@color/statusBarColor"-->
+        <!--                android:gravity="center"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:id="@+id/txt_share"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/share"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent" />-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/ll_policy"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="vertical"-->
+        <!--            app:layout_constraintDimensionRatio="1:1"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/ll_share"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintWidth_percent="0.2">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="0dp"-->
+        <!--                android:layout_marginBottom="@dimen/_2sdp"-->
+        <!--                android:src="@drawable/ic_policy"-->
+        <!--                app:layout_constraintBottom_toTopOf="@+id/txt_policy"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/txt_policy"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/policy"-->
+        <!--                android:textColor="@color/statusBarColor"-->
+        <!--                android:textSize="@dimen/_12ssp"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent" />-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_200">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/appicon" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlLoading"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animLoading"
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loading_bar" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:paddingBottom="30dp"
+                    android:text="@string/txt_this_action_can_contain_ads"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

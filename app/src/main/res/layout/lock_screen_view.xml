@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/root_layout_lock_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/banner1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/lock_screen_background_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/id_lav_record_audio"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_above="@+id/tv_all_toast"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:alpha="0.8"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/recording_mic_1" />
+
+        <TextView
+            android:id="@+id/tv_all_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/switch_to_key"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/speak_voice_password_n_or_n_click_on_keypad_icon_to_unlock_with_pin_code"
+            android:textAlignment="center"
+            android:textColor="#b3ffffff"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/switch_to_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="40dp"
+            android:maxHeight="40dp"
+            android:src="@drawable/switch_to_keypad" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

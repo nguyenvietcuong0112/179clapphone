@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="preview"
+        android:summary="Check preview of Lock Screen"
+        android:title="Preview LockScreen" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="lock_service"
+        android:summaryOff="Lock Screen is Disabled"
+        android:summaryOn="Lock Screen is Enabled"
+        android:title="Lock Screen Enable/Disable"
+        />
+    <!--    <ListPreference-->
+    <!--        android:defaultValue="1"-->
+    <!--        android:entries="@array/sel_background"-->
+    <!--        android:entryValues="@array/background_values"-->
+    <!--        android:key="select_background"-->
+    <!--        android:summary="Select Background for Lock Screen"-->
+    <!--        android:title="Choose Background" />-->
+    <!--    <ListPreference-->
+    <!--        android:defaultValue="0"-->
+    <!--        android:entries="@array/sel_font"-->
+    <!--        android:entryValues="@array/font_values"-->
+    <!--        android:key="select_font"-->
+    <!--        android:summary="Select font style for Date and time"-->
+    <!--        android:title="Font Style" />-->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="voice_lock_date_time"
+        android:summaryOff="Show Date and time on Lock Screen"
+        android:summaryOn="Hide Date and time on Lock Screen"
+        android:title="Date &amp; Time" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="sound_flag"
+        android:summaryOff="sound is Disabled"
+        android:summaryOn="Sound is Enabled"
+        android:title="Sound" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="vibration_flag"
+        android:summaryOff="Vibration is Disabled"
+        android:summaryOn="Vibration is Enabled"
+        android:title="Vibration" />
+</PreferenceScreen>

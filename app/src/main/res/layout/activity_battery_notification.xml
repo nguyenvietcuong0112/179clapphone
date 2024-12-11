@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:text="Charging alarm"
+                    android:textColor="@color/color_101828"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ic_backbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_back" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="24dp"
+            android:paddingStart="16dp"
+            android:fontFamily="@font/arsenal_bold"
+            android:text="Select your preferred alarm type"
+            android:textColor="#49566A"
+            android:textSize="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBatteryAlarms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+            app:layout_constraintVertical_bias="0.15"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_battery_alarm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="* click on any of the alarms to edit the settings"
+            android:textColor="#344054"
+            android:fontFamily="@font/arsenal_regular"
+            android:textSize="12sp"
+            />
+
+
+
+    </LinearLayout>
+
+</layout>

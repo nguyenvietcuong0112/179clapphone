@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff000000</color>
+
+    <color name="com_facebook_blue">#ff3b5998</color>
+
+    <color name="com_facebook_messenger_blue">#ff0084ff</color>
+    <color name="com_smart_login_code">#ff3c6499</color>
+
+    <color name="green">#ff2b8b36</color>
+    <color name="grey">#5cebebeb</color>
+
+    <color name="mycolorwhite">#ffffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="purple_200">#151a22</color>
+    <color name="blach_131415">#ff131415</color>
+    <color name="appcolor">#AE8EF3</color>
+    <color name="toolbarclr">#793CFD</color>
+    <color name="green_20C197">#20C197</color>
+    <color name="green_AECAC3">#AECAC3</color>
+    <color name="color_E5EAF2">#E5EAF2</color>
+    <color name="color_152031">#152031</color>
+    <color name="color_1590EA">#1590EA</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="mainColor">#FF6644</color>
+    <color name="bottom_check">#EA6D6D</color>
+    <color name="pink">#FF6480</color>
+    <color name="pink_FFEAED">#FFEAED</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorBackground">#f5f5f5</color>
+    <color name="color_101828">#101828</color>
+    <color name="text_color">#131415</color>
+    <color name="teal_200">#b095fc</color>
+    <color name="dot_color">#8e959d</color>
+
+
+    <color name="colorPrimary">#1e2a45</color>
+    <color name="colorPrimaryDark">#09101d</color>
+    <color name="colorPrimaryLight">#3c4a65</color>
+    <color name="colorSecondary">#4CAF50</color>
+    <color name="colorSecondaryDark">#388E3C</color>
+    <color name="colorSecondaryLight">#C8E6C9</color>
+    <color name="textColorDark">#000000</color>
+    <color name="textColorLight">#ffffff</color>
+    <color name="textColorMutted">#9F9F9F</color>
+
+    <color name="colorButtonUnselect">#667085</color>
+    <color name="colorButtonSelect">#5669FF</color>
+
+    <color name="colorAccent">@color/theme_color</color>
+    <color name="browser_actions_bg_grey">#f5f5f5</color>
+
+    <color name="color_warning">#80ffffff</color>
+    <color name="statusBarColor">#E91E63</color>
+    <color name="theme_color">#1e88e5</color>
+    <color name="lightCardBackground">#fcfdff</color>
+    <color name="navigationBarColor">#e9edf1</color>
+    <color name="default_item_color">#e6f4ea</color>
+    <color name="tabIconTint">#80baff</color>
+    <color name="color_btn_primary_normal1">#883ef1</color>
+    <color name="color_btn_primary_normal2">#6102e6</color>
+    <color name="color_success">#b3ffffff</color>
+    <color name="color_warning_stroke">#0d000000</color>
+
+    <color name="color_success_stroke">#1a000000</color>
+
+</resources>

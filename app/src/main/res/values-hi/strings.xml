@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ताली बजाकर फ़ोन ढूंढें</string>
+
+
+    <string name="account_url">https://play.google.com/store/apps/details?id=com.finder.clap.findphone.whistle.byclapping</string>
+    <string name="more">खाता+नाम</string>
+
+    <string name="flashlight">फ़्लैशलाइट</string>
+    <string name="messenger_send_button_text">भेजें</string>
+
+    <string name="setting">सेटिंग्स</string>
+    <string name="sound">ध्वनि</string>
+    <string name="next">अगला</string>
+    <string name="vibrate"> कंपन</string>
+    <string name="privacy_policy">https://zerogapps.netlify.app/policy</string>
+    <string name="languages">छोड़ें</string>
+    <string name="skip">अगला</string>
+    <string name="done">हो गया</string>
+    <string name="note_continue1">Find your phone immediately with\njust a clap</string>
+    <string name="note_continue2">Locate your device easily with\nvibration and light signals</string>
+    <string name="note_continue3">Customize with a wide range of\ndiverse sounds</string>
+    <string name="note_continue4">Many sounds for you to\nchoose from</string>
+    <string name="guide_1"> आप रिपोर्ट पर रक्तचाप को आसानी से और सटीक रूप से ट्रैक कर सकते हैं।</string>
+    <string name="guide_2">इसके प्रत्येक बार ग्राफ़ में अपने स्वास्थ्य में परिवर्तन देखें।</string>
+    <string name="guide_3">आपको रक्तचाप के बारे में उपयोगी जानकारी देता है।</string>
+    <string name="txt_this_action_can_contain_ads">इस क्रिया में विज्ञापन हो सकते हैं...</string>
+    <string name="start_normarl">प्रारंभ करें</string>
+    <string name="text_vibrate">कंपन</string>
+    <string name="txt_vibrate">वाइब्रेशन मोड सेट करें</string>
+    <string name="text_flash">फ़्लैशलाइट</string>
+    <string name="txt_flash">फ़्लैश को अनुकूलित करें</string>
+    <string name="text_sound">ध्वनि</string>
+</resources>

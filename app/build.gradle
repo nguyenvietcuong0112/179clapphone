@@ -1,0 +1,95 @@
+plugins {
+    id 'com.android.application'
+    id 'androidx.navigation.safeargs'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.findphone.claptofindmyphone.clap.phonefinder'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.findphone.claptofindmyphone.clap.phonefinder"
+        minSdk 24
+        targetSdk 34
+        versionCode 100
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        def formattedDate = new Date().format('MM.dd.yyyy')
+        archivesBaseName = "TR179_ClapPhoneFinder_v${versionName}_(${versionCode})_${formattedDate}"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-database:21.0.0'
+    implementation 'androidx.preference:preference:1.2.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation files('libs/TarsosDSP-1.7.jar')
+    implementation files('libs/musicg-1.4.2.0.jar')
+    implementation 'com.airbnb.android:lottie:6.3.0'
+
+    implementation 'com.google.firebase:firebase-analytics:22.1.2'
+    implementation 'com.google.firebase:firebase-crashlytics:19.2.0'
+
+    //ads
+//    implementation 'com.github.quangchienictu:AmazicAdsLibrary:2.2.6'
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.github.nguyentruongnvt72:ads-mallegan-lib:1.0.7'
+    //shimmer fb
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    // required to avoid crash on Android 12 API 31
+    implementation 'androidx.work:work-runtime-ktx:2.9.1'
+
+    implementation 'com.appsflyer:af-android-sdk:6.15.1'
+    implementation 'com.appsflyer:adrevenue:6.9.1'
+    implementation "com.android.installreferrer:installreferrer:2.2"
+    implementation 'me.relex:circleindicator:2.1.6'
+
+    implementation 'com.google.ads.mediation:facebook:6.18.0.0'
+    implementation  'com.facebook.android:facebook-android-sdk:17.0.2'
+    def billing_version = "6.0.1"
+
+    implementation "com.android.billingclient:billing:$billing_version"
+    implementation 'com.google.code.gson:gson:2.10.1'
+//    implementation 'eo.view:batterymeter:2.0.0'
+
+    implementation 'androidx.navigation:navigation-fragment:2.7.6'
+    implementation 'androidx.navigation:navigation-ui:2.7.6'
+    implementation 'androidx.activity:activity:1.8.2'
+    implementation 'androidx.activity:activity-ktx:1.8.2'
+    implementation 'io.github.pilgr:paperdb:2.7.2'
+    implementation 'com.squareup.okio:okio:2.10.0'
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:src="@drawable/back"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        >
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sound setting"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+<!--                    <TextView-->
+<!--                        android:id="@+id/textSoundonoff"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/sourcesanspro_semibold"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:layout_weight="4"-->
+<!--                        android:text="Sound sensitivity"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        app:layout_constraintStart_toEndOf="@+id/imageView_policy"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/btn_share"-->
+<!--                        android:background="@drawable/bg_about_us"-->
+<!--                        android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:paddingTop="@dimen/_12sdp"-->
+<!--                        android:paddingBottom="@dimen/_12sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_12sdp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="6">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView_share"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="@dimen/_20sdp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:srcCompat="@drawable/soundpink"-->
+<!--                            tools:ignore="VectorDrawableCompat" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewSound"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="12dp"-->
+<!--                            android:layout_weight="4"-->
+<!--                            android:text="Sound ON"-->
+<!--                            android:textSize="@dimen/_12sdp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            app:layout_constraintStart_toEndOf="@+id/imageView_policy"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentStart="true"-->
+<!--                            android:layout_alignParentTop="true"-->
+<!--                            android:layout_marginLeft="@dimen/_17sdp"-->
+<!--                            >-->
+
+<!--                            <androidx.appcompat.widget.SwitchCompat-->
+<!--                                android:id="@+id/soundbox"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:checked="true"-->
+<!--                                android:theme="@style/SCBSwitch" />-->
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="4"
+                        android:text="Sound sensitivity"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView_policy"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout
+                        android:id="@+id/btn_rate_us"
+                        android:background="@drawable/bg_about_us"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <ImageView
+                            android:id="@+id/imageView_rating"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/clapping"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp">
+                            <SeekBar
+                                android:id="@+id/seekbar"
+                                style="@style/MySeekBar"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_60sdp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginBottom="@dimen/_10sdp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

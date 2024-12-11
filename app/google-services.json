@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "910354757907",
+    "project_id": "tr179-clap-phone-finder",
+    "storage_bucket": "tr179-clap-phone-finder.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910354757907:android:1360e25b47b90937bdc2e6",
+        "android_client_info": {
+          "package_name": "com.findphone.claptofindmyphone.clap.phonefinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCltGeNhjypjNcpgoovzMVQOZ345_Ofpq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

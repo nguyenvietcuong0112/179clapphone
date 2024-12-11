@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Find Phone with Clapping</string>
+
+
+    <string name="account_url">https://play.google.com/store/apps/details?id=com.finder.clap.findphone.whistle.byclapping</string>
+    <string name="more">Account+Name</string>
+
+    <string name="flashlight">FLASHLIGHT</string>
+    <string name="messenger_send_button_text">Send</string>
+
+    <string name="setting">SETTINGS</string>
+    <string name="sound">SOUND</string>
+
+    <string name="vibrate">VIBRATE</string>
+    <string name="privacy_policy">https://zerogapps.netlify.app/policy</string>
+    <string name="languages">Languages</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+    <string name="note_continue1">Find your phone immediately with\njust a clap</string>
+    <string name="note_continue2">Locate your device easily with\nvibration and light signals</string>
+    <string name="note_continue3">Customize with a wide range of\ndiverse sounds</string>
+    <string name="note_continue4">Many sounds for you to\nchoose from</string>
+    <string name="guide_1">     You can track the Blood Pressure easily and exactly on report.</string>
+    <string name="guide_2">See the change of your health in every bar graph on it.</string>
+    <string name="guide_3">Give you useful knowledge about blood pressure.</string>
+    <string name="txt_this_action_can_contain_ads">This action can contain ads…</string>
+    <string name="start_normarl">Start</string>
+    <string name="text_vibrate">Vibrate</string>
+    <string name="txt_vibrate">Set up vibration mode</string>
+    <string name="text_flash">Flashlight</string>
+    <string name="txt_flash">Customize the flash</string>
+    <string name="text_sound">Sound</string>
+
+</resources>

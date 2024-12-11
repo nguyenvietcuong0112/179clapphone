@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/arsenal_bold"
+            android:text="Let’s complete initial setup"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/initial_setup_activity_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/arsenal_bold"
+                android:text="Set up a voice password and a 10-digit PIN\nbefore using this app"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_set_voice_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/shape_warning"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingTop="5dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/ic_set_voice"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8.5"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:text="Set Voice Password"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anim_voice_password_done"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        app:lottie_autoPlay="false"
+                        app:lottie_loop="false"
+                        app:lottie_progress="0"
+                        app:lottie_rawRes="@raw/done_green" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_set_alternate_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_warning"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingTop="5dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:weightSum="10">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/ic_set_pin"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8.5"
+                    android:text="Set alternate PIN"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anim_set_pin_done"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        app:lottie_autoPlay="false"
+                        app:lottie_loop="false"
+                        app:lottie_progress="0"
+                        app:lottie_rawRes="@raw/done_green" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_enable_screen_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_warning"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingTop="5dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:weightSum="10">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/ic_enable_screen"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8.5"
+                    android:text="Enable Screen Overlay"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anim_screen_overlay_permission_done"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        app:lottie_autoPlay="false"
+                        app:lottie_loop="false"
+                        app:lottie_progress="0"
+                        app:lottie_rawRes="@raw/done_green" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_get_started"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_btn_install_intro2"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:minHeight="40dp"
+                    android:paddingStart="70dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="70dp"
+                    android:paddingBottom="5dp"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/arsenal_bold"
+                    android:text="After completing all necessary setup, you can start using the application right away"
+                    android:textAlignment="center"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

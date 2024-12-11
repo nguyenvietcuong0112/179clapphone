@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/rl_top">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/btn_allow_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/bg_item_per"
+                    android:paddingHorizontal="16dp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imgRecord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_record_per"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="16dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_toStartOf="@id/onOffSwitchRecord"
+                        android:layout_toEndOf="@+id/imgRecord">
+
+                        <TextView
+                            android:id="@+id/tvRecord"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/arsenal_bold"
+                            android:text="Audio Record"
+                            android:textColor="#101828"
+                            android:textSize="@dimen/dp16"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt_require"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/arsenal_regular"
+                            android:text="Requires permission to access device\'s audio record"
+                            android:textColor="#344054"
+                            android:textSize="14sp"
+                            app:layout_constraintTop_toBottomOf="@+id/tvRecord"
+                            tools:layout_editor_absoluteX="72dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/onOffSwitchRecord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+
+                        android:thumb="@drawable/custom_thumb"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:switchMinWidth="48dp"
+                        app:switchPadding="4dp"
+                        app:track="@drawable/custom_track" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/btnCamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/bg_item_per"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingHorizontal="@dimen/_16sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_allow_record"
+
+                    >
+                    <ImageView
+                        android:id="@+id/imgCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_camera"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginVertical="16dp"
+                        android:layout_toEndOf="@+id/imgCamera"
+                        android:layout_toStartOf="@id/onOffCamera">
+
+                        <TextView
+                            android:id="@+id/tvCamera"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/arsenal_bold"
+                            android:text="Camera"
+                            android:textColor="#101828"
+                            android:textSize="@dimen/dp16"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txtCamera"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/arsenal_regular"
+                            android:text="Requires permission to access device's camera flash"
+                            android:textColor="#344054"
+                            android:textSize="14sp"
+                            app:layout_constraintTop_toBottomOf="@+id/tvCamera"
+                            tools:layout_editor_absoluteX="72dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/onOffCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:thumb="@drawable/custom_thumb"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:switchMinWidth="48dp"
+                        app:switchPadding="4dp"
+                        app:track="@drawable/custom_track" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/btnOverLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/bg_item_per"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingHorizontal="@dimen/_16sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/btnCamera"
+
+                    >
+                    <ImageView
+                        android:id="@+id/imgOverLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_over_lay"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginVertical="16dp"
+                        android:layout_toEndOf="@+id/imgOverLay"
+                        android:layout_toStartOf="@id/onOffOverLay">
+
+                        <TextView
+                            android:id="@+id/tvOverLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/arsenal_bold"
+                            android:text="Enable screen overlay"
+                            android:textColor="#101828"
+                            android:textSize="@dimen/dp16"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txtOverLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/arsenal_regular"
+                            android:text="Displayed on other applications"
+                            android:textColor="#344054"
+                            android:textSize="14sp"
+                            app:layout_constraintTop_toBottomOf="@+id/tvOverLay"
+                            tools:layout_editor_absoluteX="72dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/onOffOverLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:thumb="@drawable/custom_thumb"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:switchMinWidth="48dp"
+                        app:switchPadding="4dp"
+                        app:track="@drawable/custom_track" />
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/arsenal_bold"
+                android:text="Permission"
+                android:textColor="#101828"
+                android:textSize="20dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/txtGo"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:src="@drawable/ic_next_per" />
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/fr_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/shimmer_native_language"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/ads_shimmer_native_language" />
+            </RelativeLayout>
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
